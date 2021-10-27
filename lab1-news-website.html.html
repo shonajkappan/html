@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML Lab1</title>	
+</head>
+<body>
+<form action="register.php" method="post" target="self" enctype="multipart/form-data">
+	<fieldset>
+		<legend>Personal Details</legend>
+		<label for="name">Name</label><br>
+	    <input type="text" id ="name" placeholder="Name" required maxlength="25" ><br>
+	  	<label for="email">Email</label><br>
+	    <input type="text" id ="email" name="email" placeholder="test@example.com" autofocus="auto" required><br>
+	    <label for="password">Password</label><br>
+	    <input type="password" id="password"  required minlength="6">
+	</fieldset> 
+		<br><br>
+	    Category<br>
+	    <select required>
+		<option>Student</option>
+		<option>Employee</option>
+		<option selected>Freelancer</option>
+		</select><br><br>Event Date<br>
+		<input type="date" name="date" required><br>Tickets:-<br>
+		<input type="radio" name="subject" value="frontend">1 Ticket
+		<input type="radio" name="subject" value="frontend" checked>2 Tickets
+		<input type="radio" name="subject" value="frontend">3 Tickets<br><br>
+		
+	Online Payment<br>
+		<input type="checkbox" name="check" required><br>
+
+		Note :-<br>
+		<textarea placeholder="Write your Feedback" rows="30" cols="30" name="Description"></textarea>
+<input type="reset" value="Reset">
+
+		<button type="button">Submit</button>
+
+</form>
+</body>
+
+</html>
